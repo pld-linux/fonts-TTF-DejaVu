@@ -10,7 +10,7 @@ Source0:	http://www.srnet.cz/~stepan/sw/data/%{_name}-ttf-%{version}.tar.gz
 # Source0-md5:	16002b942c031a2596db8ccecc90402e
 # Source0-size:	372408
 #Source1:	%{name}.Fontmap
-URL:		http://www.gnome.org/fonts/
+URL:		http://www.srnet.cz/~stepan/en/sw/dejavu.shtml
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
 BuildArch:	noarch
