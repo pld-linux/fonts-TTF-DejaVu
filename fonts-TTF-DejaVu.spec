@@ -3,12 +3,12 @@
 Summary:	Bitstream Vera True Type fonts fork with latin-ext-A characters
 Summary(pl):	Od³am fontów True Type Bitstream Vera ze znakami latin-ext-A
 Name:		fonts-TTF-DejaVu
-Version:	2.3
+Version:	2.4.1
 Release:	1
 License:	distributable
 Group:		Fonts
-Source0:	http://dl.sourceforge.net/dejavu/%{_name}-ttf-%{version}-%{_rel}.tar.gz
-# Source0-md5:	83d1a20b38bba47b4d2428c744ac6a26
+Source0:	http://dl.sourceforge.net/dejavu/%{_name}-ttf-%{version}.tar.gz
+# Source0-md5:	4966b20f1990c963c54b3a394f0d0e23
 URL:		http://dejavu.sourceforge.net/wiki/index.php/Main_Page
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
