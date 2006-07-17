@@ -22,8 +22,8 @@ DejaVu is a set of fonts based on Bitstream Vera fonts which have
 additional characters from Latin Extended-A set.
 
 %description -l pl
-DejaVu to zestaw fontów oparty na Bitstream Vera z rozszerzonym
-wsparciem dla znaków Latin Extened-A.
+DejaVu to zestaw fontów oparty na Bitstream Vera z dodanymi znakami
+Latin Extened-A.
 
 %prep
 %setup -q -n %{_name}-ttf-%{version}
