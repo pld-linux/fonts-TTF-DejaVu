@@ -1,7 +1,7 @@
 %define		_name	dejavu
 %define		_rel	1
 Summary:	Bitstream Vera True Type fonts fork with latin-ext-A characters
-Summary(pl):	Od≥am fontÛw True Type Bitstream Vera ze znakami latin-ext-A
+Summary(pl.UTF-8):   Od≈Çam font√≥w True Type Bitstream Vera ze znakami latin-ext-A
 Name:		fonts-TTF-DejaVu
 Version:	2.12
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 DejaVu is a set of fonts based on Bitstream Vera fonts which have
 additional characters from Latin Extended-A set.
 
-%description -l pl
-DejaVu to zestaw fontÛw oparty na Bitstream Vera z dodanymi znakami
+%description -l pl.UTF-8
+DejaVu to zestaw font√≥w oparty na Bitstream Vera z dodanymi znakami
 Latin Extened-A.
 
 %prep
