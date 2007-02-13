@@ -1,7 +1,7 @@
 %define		_name	dejavu
 %define		_rel	1
 Summary:	Bitstream Vera True Type fonts fork with latin-ext-A characters
-Summary(pl.UTF-8):   Odłam fontów True Type Bitstream Vera ze znakami latin-ext-A
+Summary(pl.UTF-8):	Odłam fontów True Type Bitstream Vera ze znakami latin-ext-A
 Name:		fonts-TTF-DejaVu
 Version:	2.12
 Release:	1
