@@ -2,7 +2,7 @@ Summary:	Bitstream Vera TrueType fonts fork with additional characters
 Summary(pl.UTF-8):	Odłam fontów TrueType Bitstream Vera z dodanymi znakami
 Name:		fonts-TTF-DejaVu
 Version:	2.33
-Release:	1
+Release:	2
 License:	distributable
 Group:		Fonts
 Source0:	http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-%{version}.tar.bz2
