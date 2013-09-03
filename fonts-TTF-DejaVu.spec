@@ -1,12 +1,12 @@
 Summary:	Bitstream Vera TrueType fonts fork with additional characters
 Summary(pl.UTF-8):	Odłam fontów TrueType Bitstream Vera z dodanymi znakami
 Name:		fonts-TTF-DejaVu
-Version:	2.33
-Release:	2
+Version:	2.34
+Release:	1
 License:	distributable
 Group:		Fonts
 Source0:	http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-%{version}.tar.bz2
-# Source0-md5:	8b601e91725b6d69141b0fcf527948c0
+# Source0-md5:	161462de16e2ca79873bc2b0d2e6c74c
 URL:		http://dejavu.sourceforge.net/wiki/index.php/Main_Page
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
@@ -28,9 +28,16 @@ wielu alfabetów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_ttffontsdir}
+install -d $RPM_BUILD_ROOT{%{_ttffontsdir},%{_datadir}/fontconfig/conf.avail,/etc/fonts/conf.d}
 
 install ttf/*.ttf $RPM_BUILD_ROOT%{_ttffontsdir}
+
+cd fontconfig
+for fontconf in *conf ; do
+	install -m 0644 -p $fontconf $RPM_BUILD_ROOT%{_datadir}/fontconfig/conf.avail
+	ln -s %{_datadir}/fontconfig/conf.avail/$fontconf \
+		$RPM_BUILD_ROOT/etc/fonts/conf.d/$fontconf
+done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,3 +52,6 @@ fontpostinst TTF
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS LICENSE NEWS README
 %{_ttffontsdir}/*
+%{_datadir}/fontconfig/conf.avail/*.conf
+/etc/fonts/conf.d/*.conf
+
