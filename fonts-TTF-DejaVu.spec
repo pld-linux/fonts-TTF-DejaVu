@@ -51,7 +51,8 @@ fontpostinst TTF
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS LICENSE NEWS README
-%{_ttffontsdir}/*
-%{_datadir}/fontconfig/conf.avail/*.conf
-/etc/fonts/conf.d/*.conf
-
+%{_ttffontsdir}/DejaVu*.ttf
+%{_datadir}/fontconfig/conf.avail/20-unhint-small-dejavu-*.conf
+%{_datadir}/fontconfig/conf.avail/57-dejavu-*.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-*.conf
+/etc/fonts/conf.d/57-dejavu-*.conf
